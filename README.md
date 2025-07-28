@@ -25,8 +25,5 @@ Ele permite **iniciar, pausar e resetar** o tempo, exibindo horas, minutos, segu
 
 ## 📸 Demonstração
 
-> _(Adicione aqui uma imagem ou gif do seu cronômetro rodando)_
+![Cronômetro elegante](cronometro.png)
 
-Exemplo de como inserir a imagem depois que você subir para o repositório:
-```markdown
-![Imagem do cronômetro](cronometro.png)
