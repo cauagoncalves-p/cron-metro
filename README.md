@@ -29,4 +29,4 @@ Ele permite **iniciar, pausar e resetar** o tempo, exibindo horas, minutos, segu
 
 Exemplo de como inserir a imagem depois que você subir para o repositório:
 ```markdown
-![Imagem do cronômetro](./C:\Users\cauag\OneDrive\Curso da Oracle\certificado oracle)
+![Imagem do cronômetro](cronometro.png)
