@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro Elegante</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="cronometro-container">
+        <h1 class="titulo">Cronômetro</h1>
+        <div class="display-tempo">
+            <span id="horas">00</span>:
+            <span id="minutos">00</span>:
+            <span id="segundos">00</span>
+            <span id="milissegundos">.00</span>
+        </div>
+    <div class="botoes">
+        <button id="iniciar" class="btn btn-iniciar">
+            <i class="fas fa-play"></i>
+        </button>
+        <button id="pausar" class="btn btn-pausar" disabled>
+            <i class="fas fa-pause"></i>
+        </button>
+        <button id="resetar" class="btn btn-resetar">
+            <i class="fas fa-redo"></i>
+        </button>
+    </div>
+        <div class="marcadores" id="marcadores"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
