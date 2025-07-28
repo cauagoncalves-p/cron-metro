@@ -19,6 +19,38 @@ body {
 .titulo {
   display: none; 
 }
+.display-wrapper {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* NÃO define width/height fixos aqui, o círculo vai ser absoluto */
+}
+
+.display-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 40vw;   /* 🔥 largura proporcional à tela */
+  height: 40vw;  /* 🔥 altura proporcional à tela */
+  max-width: 600px;  /* limite máximo em telas grandes */
+  max-height: 600px;
+  min-width: 250px;  /* limite mínimo em telas pequenas */
+  min-height: 250px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top: 10px solid #00e676;
+  border-right: 10px solid #00e676;
+  animation: girar 4s linear infinite;
+  box-sizing: border-box;
+  opacity: 0.8;
+  pointer-events: none; /* não bloquear cliques */
+}
+
+/* animação do círculo */
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
 
 .display-tempo {
   font-size: 4rem;
@@ -96,5 +128,13 @@ body {
     width: 50px;
     height: 50px;
     font-size: 1.2rem;
+  }
+
+   .display-wrapper::before {
+    width: 100vw;
+    height: 100vw;
+    border: 6px solid transparent;
+    border-top: 6px solid #00e676;
+    border-right: 6px solid #00e676;
   }
 }
